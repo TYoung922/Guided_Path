@@ -5,8 +5,10 @@
 body {
   /* background-color: #094268; */
   /* color: white; */
-  background-color: white;
-  color: #094268;
+  /* background-color: white; */
+  background-image: url(/images/nature.jpg);
+  /* color: #094268; */
+  color: white;
 }
 
 header {
@@ -16,6 +18,7 @@ header {
   position: relative; /* Position for centering */
   color: #b69b00;
   padding: 15px;
+  background-color: white;
 }
 
 .logo {
@@ -36,13 +39,49 @@ h1 {
   transform: translateX(-50%);
   font-size: 4rem;
 }
+
+header .title {
+  transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  /* background-color: #094268; */
+  border-width: 3px;
+  border-color: #094268;
+  box-shadow: 5px 5px 5px 5px #094268;
+}
+
+.name {
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: #094268;
+  font-size: 4rem;
+}
+.subT2 {
+  position: absolute;
+  left: 19%;
+  transform: translate(-50% 300%);
+  font-size: 1.2rem;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: #094268;
+}
+
 .subT {
   position: absolute;
   left: 50%;
-  /* transform: translateX(-50%); */
-  /* transform: translateY(200%); */
   transform: translate(-50%, 200%);
   font-size: 1.2rem;
+  /* text-shadow: 2px 2px 2px #094268; */
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.headShot_blurb {
+  background-color: white;
+  color: #094268;
+}
+
+.info-block {
+  background-color: white;
+  color: #094268;
 }
 
 nav {
@@ -214,10 +253,12 @@ p {
   padding: 20px;
   padding-left: 50px;
   font-size: 1.3rem;
+  color: whitesmoke;
 }
 
 .goBack a {
   text-decoration: none;
+  color: white;
 }
 
 .goBack a:hover {

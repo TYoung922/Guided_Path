@@ -15,12 +15,14 @@ header {
   justify-content: space-between; /* Spread items across the container */
   position: relative; /* Position for centering */
   color: #b69b00;
+  padding: 15px;
 }
 
 .logo {
   width: 10%;
   height: auto;
   padding-left: 20px;
+  /* padding-bottom: 20px; */
   /* position: absolute; */
   /* display: inline-block; */
 }
@@ -50,6 +52,7 @@ nav {
   font-size: 24px;
   position: sticky;
   top: 0px;
+  z-index: 1;
 }
 
 .nav-controls {
@@ -74,7 +77,7 @@ ul {
   padding: 10px;
 } */
 
-li a {
+.nav-controls a {
   color: white;
   text-decoration: none;
 }
@@ -90,30 +93,140 @@ li a:hover {
 .hold {
   padding: 20px;
   border: 20px;
+  text-align: center;
 }
 
 .vidContain {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 0px 0px 15px 8px #094268;
+  box-shadow: 0px 0px 20px 2px #094268;
   margin: auto;
+  margin-bottom: 100px;
   padding: 20px;
   border-radius: 10px;
   width: 80%;
 }
 
-.video_info {
-  padding: 100px;
+.headShot_blurb {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 0px 20px 2px #094268;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
 }
-/* .box {
-  width: 90%;
-  height: 90%;
-} */
+.video_info {
+  padding: 90px;
+}
+.head_shot {
+  width: 25%;
+}
 
 .tour {
-  width: 560px;
+  width: 800px;
   padding: 100px;
+}
+
+p {
+  padding: 70px;
+}
+
+.quick_jump li a {
+  color: #094268;
+  text-align: center;
+  text-decoration: none;
+}
+
+.quick_jump li a:hover {
+  text-decoration: underline;
+  color: #b69b00;
+}
+
+.quick_jump li {
+  text-align: center;
+  margin-top: 20px;
+  /* text-decoration: auto; */
+}
+
+.GP_therapist {
+  text-align: center;
+  padding: 25px;
+}
+
+.form_container {
+  box-shadow: 0px 0px 20px 2px #094268;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 60%;
+  font-size: 1.1rem;
+}
+
+#button {
+  transform: translate(-50% -50%);
+  background-color: #094268;
+  color: white;
+  padding: 7px;
+  border-radius: 3px;
+  border-width: 4px;
+  border-color: #094268;
+  font-size: 1.1rem;
+}
+
+#button:hover {
+  border-color: #b69b00;
+  border-width: 4px;
+  color: #b69b00;
+}
+
+#insurance-name {
+  display: none;
+}
+
+#child-name {
+  display: none;
+}
+
+.option {
+  margin-right: 8px;
+  margin-bottom: 6px;
+}
+
+.list-disclaim {
+  text-align: center;
+  margin: 20px;
+  padding-top: 30px;
+}
+
+.info-block {
+  box-shadow: 0px 0px 20px 2px #094268;
+  margin: auto;
+  margin-bottom: 100px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.goBack {
+  padding: 20px;
+  padding-left: 50px;
+  font-size: 1.3rem;
+}
+
+.goBack a {
+  text-decoration: none;
+}
+
+.goBack a:hover {
+  text-decoration: underline;
+  color: #b69b00;
+}
+
+.space {
+  padding-top: 100px;
 }
 
 footer {
@@ -121,4 +234,86 @@ footer {
   color: white;
   text-align: center;
   padding: 30px;
+}
+
+/* cards */
+.cards {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.card {
+  width: 250px;
+  height: 350px;
+  perspective: 800px;
+  border-style: none;
+  padding-left: 160px;
+  padding-top: 100px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  text-align: center;
+}
+
+.card-front {
+  background-color: #094268;
+  color: #b69b00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.card-back {
+  background-color: #b69b00;
+  color: #fff;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.learn-more {
+  color: #094268;
+  text-decoration: none;
+}
+
+.learn-more:hover {
+  text-decoration: underline;
+  color: #117cc4;
+}
+
+.explain {
+  padding: 10px;
+  font-size: 1.3rem;
+}
+
+.explain2 {
+  padding: 10px;
+  font-size: 1.1rem;
+}
+
+.therapy-type {
+  padding: 10px;
 }

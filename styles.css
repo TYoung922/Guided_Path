@@ -6,7 +6,10 @@ body {
   /* background-color: #094268; */
   /* color: white; */
   /* background-color: white; */
-  background-image: url(/images/nature.jpg);
+  /* background-image: url(/images/nature.jpg); */
+  background-image: url(/images/cairn_desert.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   /* color: #094268; */
   color: white;
 }
@@ -70,8 +73,8 @@ header .title {
   transform: translate(-50%, 200%);
   font-size: 1.2rem;
   /* text-shadow: 2px 2px 2px #094268; */
-  -webkit-text-stroke: 1px;
-  -webkit-text-stroke-color: black;
+  /* -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: black; */
 }
 
 .headShot_blurb {
@@ -145,6 +148,8 @@ li a:hover {
   padding: 20px;
   border-radius: 10px;
   width: 80%;
+  background-color: white;
+  color: #094268;
 }
 
 .headShot_blurb {
@@ -202,6 +207,8 @@ p {
   border-radius: 10px;
   width: 60%;
   font-size: 1.1rem;
+  background-color: white;
+  color: #094268;
 }
 
 #button {
@@ -292,8 +299,10 @@ footer {
   height: 350px;
   perspective: 800px;
   border-style: none;
-  padding-left: 160px;
-  padding-top: 100px;
+  /* padding-left: 160px;
+  padding-top: 100px; */
+  margin-left: 160px;
+  margin-top: 100px;
 }
 
 .card-inner {

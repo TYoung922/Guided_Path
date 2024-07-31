@@ -7,7 +7,7 @@ body {
   /* color: white; */
   /* background-color: white; */
   /* background-image: url(/images/nature.jpg); */
-  background-image: url(/images/cairn_desert.jpg);
+  background-image: url(../images/cairn_desert.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   /* color: #094268; */
@@ -347,39 +347,39 @@ footer {
 /* card images */
 
 #playT {
-  background-image: url(/images/play_therapy.jpg);
+  background-image: url(../images/play_therapy.jpg);
   background-size: cover;
   color: white;
 }
 
 #sandT {
-  background-image: url(/images/sandTray2.jpg);
+  background-image: url(../images/sandTray2.jpg);
   background-size: cover;
   color: white;
   /* color: #094268; */
 }
 
 #artT {
-  background-image: url(/images/art_therapy.jpg);
+  background-image: url(../images/art_therapy.jpg);
   background-size: cover;
   color: white;
 }
 
 #emdr {
-  background-image: url(/images/EMDR1.jpg);
+  background-image: url(../images/EMDR1.jpg);
   background-size: cover;
   color: white;
 }
 
 #dnms {
-  background-image: url(/images/ifs2);
+  background-image: url(../images/ifs2);
   background-size: cover;
   /* color: #094268; */
   color: white;
 }
 
 #cbt {
-  background-image: url(/images/cbt2.jpg);
+  background-image: url(../images/cbt2.jpg);
   background-size: cover;
   /* color: #094268; */
   color: white;

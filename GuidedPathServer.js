@@ -4,16 +4,17 @@ const nodemailer = require("nodemailer");
 require("dotenv").config();
 
 const app = express();
-// const port = process.env.PORT || 3000;
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // Middleware to parse form data
 app.use(bodyParser.urlencoded({ extended: false }));
 
+// Middleware to serve static files
+app.use(express.static(__dirname + "/public"));
+
 // Serve the HTML form
 app.get("/", (req, res) => {
-  //   res.sendFile(__dirname + "/wait_list.html");
-  res.sendFile(__dirname + "/wait_list.html");
+  res.sendFile(__dirname + "/public/wait_list.html");
 });
 
 // Handle form submission

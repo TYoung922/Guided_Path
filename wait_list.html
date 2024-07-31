@@ -32,7 +32,7 @@
       </h4>
       <br /><br />
       <div class="form_container">
-        <form action="tbd">
+        <form action="/send-email" method="POST">
           What is your name?
           <br />
           <input type="text" id="fullName" name="fullName" placeholder="Name" />
@@ -50,7 +50,7 @@
           <label for="self">
             <input
               type="radio"
-              name="self-child"
+              name="selfChild"
               id="self"
               class="option"
               value="self"
@@ -61,7 +61,7 @@
           <label for="child">
             <input
               type="radio"
-              name="self-child"
+              name="selfChild"
               id="child"
               class="option"
               value="child"
@@ -69,10 +69,9 @@
             />This is for my child
             <input
               type="text"
-              name="self-child"
+              name="selfChild"
               id="child-name"
               class="option"
-              value="child-name"
             />
           </label>
           <br />
@@ -131,7 +130,7 @@
           during the week?
           <br />
           <textarea
-            name="schedulding"
+            name="conflict"
             id="schedulding"
             class="option"
             rows="15"
@@ -155,7 +154,7 @@
           <label for="insurancePay">
             <input
               type="radio"
-              id="insurancePay"
+              id="insurance_Pay"
               class="option"
               name="payment"
               value="insurancePay"

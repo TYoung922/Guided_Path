@@ -7,7 +7,7 @@ function insertClientData() {
       email: "somewhere@someplace.com",
       phone: 369852147,
       whoFor: "child, timmy",
-      service: ["play", "express-art", "emdr"],
+      service: "play, express-art, emdr",
       conflict: "I have no conflicts",
       paymentMethod: "Self Pay",
     },
@@ -16,11 +16,12 @@ function insertClientData() {
       email: "overthere@someplace.com",
       phone: 258741369,
       whoFor: "self",
-      service: ["sand-tray", "emdr", "ifs-dnms"],
+      service: "sand-tray, emdr, ifs-dnms",
       conflict: "I have so many conflicts",
       paymentMethod: "insurancePay, Univirsity of Utah",
     },
   ]);
 }
 
-// insertClientData();
+insertClientData();
+module.exports = insertClientData;

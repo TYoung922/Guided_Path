@@ -10,8 +10,10 @@ body {
   background-image: url(../images/cairn_desert.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   /* color: #094268; */
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -22,8 +24,8 @@ header {
   color: #b69b00;
   padding: 15px;
   background-color: white;
+  font-family: "Times New Roman", Times, serif;
 }
-
 .logo {
   width: 10%;
   height: auto;
@@ -383,4 +385,136 @@ footer {
   background-size: cover;
   /* color: #094268; */
   color: white;
+}
+
+/* Admin page */
+.adminList {
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  padding: 25px;
+  border-radius: 10px;
+  width: 12%;
+  box-shadow: 0px 0px 10px 10px #094268;
+  color: #094268;
+  background-color: white;
+}
+
+.full-waitlist {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 0px 20px 2px #094268;
+  margin: auto;
+  margin-bottom: 100px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 25%;
+  background-color: white;
+  color: #094268;
+}
+
+.poClient {
+  color: #094268;
+  display: inline-block;
+  /* float: left; */
+  margin: 15px;
+}
+
+.poClient a {
+  color: #094268;
+}
+.admin-controls {
+  display: inline-block;
+  margin-left: 35px;
+  align-items: flex-end;
+  /* float: right; */
+}
+
+.admin-nav-controls {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 100px;
+}
+
+.admin-nav-controls a {
+  text-decoration: none;
+  color: white;
+}
+
+.admin-controls .btn {
+  color: white;
+  background-color: #094268;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* client pages */
+.clientSheet {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  box-shadow: 0px 0px 20px 2px #094268;
+  margin: auto;
+  margin-bottom: 100px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%;
+  background-color: white;
+  color: #094268;
+}
+
+.name {
+  font-size: 2rem;
+}
+
+.clientInfo li {
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+
+/* log in */
+.logIn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 0px 20px 2px #094268;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  background-color: white;
+  color: #094268;
+}
+
+.button {
+  margin-left: 100px;
+  padding: 5px;
+  background-color: #094268;
+  color: white;
+  border-radius: 8px;
+  font-size: 1.4rem;
+}
+
+.button:hover {
+  background-color: #b69b00;
+  color: #094268;
+  cursor: pointer;
+}
+
+.adminLink {
+  color: white;
+  text-decoration: none;
+}
+
+.adminLink:hover {
+  color: #b69b00;
+  text-decoration: underline;
 }

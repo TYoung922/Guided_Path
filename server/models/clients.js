@@ -13,7 +13,7 @@ const ClientSchema = new Schema({
     type: Number,
   },
   whoFor: {
-    type: String,
+    type: Array,
   },
   service: {
     type: Array,
@@ -22,8 +22,8 @@ const ClientSchema = new Schema({
     type: String,
   },
   paymentMethod: {
-    type: String,
+    type: Array,
   },
 });
 
-module.exports = mongoose.model("client", ClientSchema);
+module.exports = mongoose.model("Client", ClientSchema);

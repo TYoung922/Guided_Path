@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guided Path</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <!-- <a href="index.html"> -->
+      <img class="logo" src="images/carin_logo.png" alt="logo" />
+      <!-- </a> -->
+      <h1>Guided Path</h1>
+      <h5 class="subT">Center for Trauma Healing</h5>
+    </header>
+    <nav class="main-nav">
+      <ul class="nav-controls">
+        <li><a href="index.html">Home</a></li>
+        <!-- <li>Home</li> -->
+        <li><a href="meet.html">Meet Your Therapist</a></li>
+        <li><a href="video_tour.html">Video Tour</a></li>
+        <li><a href="learn_more.html">Learn More</a></li>
+        <li><a href="wait_list.html">Join Wait List</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="logIn">
+        <h2>Guided Path Log In</h2>
+        <br />
+        <form action="/admin" method="POST">
+          <label for="username"><b>Username:</b></label>
+          <input type="text" name="username" placeholder="Enter Username" />
+          <br /><br />
+          <label for="password"><b>Password:</b></label>
+          <input type="password" name="password" placeholder="Enter Password" />
+          <br /><br />
+          <input type="submit" value="Login" class="button" />
+        </form>
+      </div>
+    </main>
+    <footer>
+      Guided path center for trauma healing&copy; &reg; &trade; &nbsp;
+      <a href="/admin/">admin</a>
+    </footer>
+  </body>
+</html>

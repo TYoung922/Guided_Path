@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin dash</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <!-- <a href="index.html"> -->
+      <img class="logo" src="/images/carin_logo.png" alt="logo" />
+      <!-- </a> -->
+      <h1>Guided Path</h1>
+      <h5 class="subT">Center for Trauma Healing</h5>
+    </header>
+    <nav class="main-nav">
+      <ul class="nav-controls">
+        <!-- <li><a href="/public/index.html">Home</a></li> -->
+        <!-- <li>Home</li> -->
+        <li><a href="/admin/logout">Log Out</a></li>
+        <!-- <li><a href="video_tour.html">Video Tour</a></li>
+        <li><a href="learn_more.html">Learn More</a></li>
+        <li><a href="wait_list.html">Join Wait List</a></li> -->
+      </ul>
+    </nav>
+    <main>
+      <h2 class="adminList">Current <br />Wait List</h2>
+      <ul class="full-waitlist">
+        <% data.forEach(client => { %>
+        <li class="poClient">
+          <a href="/admin/client/<%= client._id %>"
+            ><%= client.fullName %> &nearr;</a
+          >
+          <div class="admin-controls">
+            <form
+              action="/delete-client/<%= client._id %>?_method=DELETE"
+              method="post"
+            >
+              <input type="submit" value="Delete" class="btn" />
+            </form>
+          </div>
+        </li>
+        <% }); %>
+      </ul>
+    </main>
+    <footer>Guided path center for trauma healing&copy; &reg; &trade;</footer>
+  </body>
+</html>
